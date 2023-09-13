@@ -1,0 +1,149 @@
+body {
+    color: #eeeeee;
+    font-family: arial;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    text-align: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+    font-size: 10px;
+    text-align: right;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 15px 25px 30px 25px;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.4s ease-in-out;
+    color: #eeeeee;
+    background: -webkit-linear-gradient(right, #E3612C 0, #E3612C 33.3%, #FCCE30 33.3%, #FCCE30 66.6%, #58554B 66.6%, #58554B) bottom no-repeat;
+    background: -o-linear-gradient(right, #E3612C 0, #E3612C 33.3%, #FCCE30 33.3%, #FCCE30 66.6%, #58554B 66.6%, #58554B) bottom no-repeat;
+    background: linear-gradient(to right, #E3612C 0, #E3612C 33.3%, #FCCE30 33.3%, #FCCE30 66.6%, #58554B 66.6%, #58554B) bottom no-repeat;
+    background-size: 70% 5px;
+}
+
+header a:hover {
+    background-size: 100% 5px;
+}
+
+.portrait {
+    width: 250px;
+}
+
+.nav {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    width: 500px;
+    height: 40px;
+    margin: 20px auto;
+    background: rgba(0,0,0,.2);
+    border-radius:  3px;
+}
+    
+input {
+      width: 370px;
+      padding: 12px 5px;
+      float: left;
+      color: #eee;
+      border: 0;
+      background: transparent;
+      border-radius: 3px 0 0 3px;
+      &:focus {
+        outline: 0;
+        background:transparent;
+      }
+}
+
+    
+button {
+      position: relative;
+      float: right;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      height: 40px;
+      width: 120px;
+      color: #fff;
+      background: transparent;
+      border-left: 1px solid #fff;
+      border-radius: 0 3px 3px 0;
+      &:hover {
+        background: #fff;
+        color:#444;
+      }
+      &:active {
+        box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+      }
+      &:focus {
+        outline: 0;
+      }
+}
+
+.messages {
+    width: 500px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+#messageError {
+    color: red;
+}
+
+
+
+
+
+
