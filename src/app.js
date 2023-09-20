@@ -5,6 +5,8 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const host = process.env.HOST || 'localhost'
+
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -22,7 +24,8 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Darya Mamulchenko'
+        name: 'Darya Mamulchenko',
+        host
     })
 })
 
